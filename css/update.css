@@ -1,0 +1,151 @@
+/* General Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://cdn.wallpapersafari.com/30/17/UayVgz.png') no-repeat center center fixed; /* Replace with your background image */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    box-shadow: 0 6px 8px white; /* Soft shadow */
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    margin: 150px auto;
+    text-align: center;
+    color: white;
+
+
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: white;
+}
+
+
+/* Styling the navbar */
+.navbar {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+.navbar-right
+{
+    display: flex;
+    flex-direction:row;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.app-title {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-right .btn {
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+#logout-btn
+{
+    margin-right: 50px;
+}
+
+.navbar-right .btn:hover {
+    background-color:black;
+}
+
+
+/* Table Styles */
+.teacher-table {
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: collapse;
+    color: white;
+}
+
+.teacher-table th, .teacher-table td {
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent borders */
+    padding: 12px;
+    text-align: center;
+}
+
+.teacher-table th {
+    background-color:grey; /* Semi-transparent header */
+    color: white;
+}
+
+.teacher-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+}
+
+.teacher-table .btn {
+    margin: 5px;
+    padding: 7px 12px;
+    background-color: rgba(244, 67, 54, 0.7); /* Semi-transparent red for delete */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.teacher-table .btn.update-btn {
+    background-color: rgba(0, 140, 186, 0.7); /* Semi-transparent blue for update */
+}
+
+.teacher-table .btn:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-left, .navbar-right {
+        margin: 5px 0;
+    }
+
+    .teacher-table th, .teacher-table td {
+        font-size: 14px;
+    }
+}

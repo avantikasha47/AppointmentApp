@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Login</title>
+    <link rel="stylesheet" href="../css/teacher-login.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="logo">
+            <img src="https://www.ajims.edu.in/ASPXImages/appointment.jpg" alt="Logo" class="sign">
+        </div>  
+           <div class="stmt">
+            <span class="app-title">Appointment App</span>
+        </div>
+        </div>
+        <div class="navbar-right">
+            <button id="home-btn" class="btn home-btn">Home</button>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Teacher Login</h1>
+        <form id="teacher-login-form" class="form-container">
+            <div class="form-group">
+                <label for="teacher-id">Teacher ID</label>
+                <input type="text" id="teacher-id" placeholder="Enter your Teacher ID" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password (at least 6 characters)" required>
+            </div>
+            <button type="submit" class="btn submit-btn">Login</button>
+        </form>
+    </div>
+</body>
+<script type="module" src="../js/firebase-config.js"></script>
+<script type="module" src="../js/teacher-login.js"></script>
+</html>

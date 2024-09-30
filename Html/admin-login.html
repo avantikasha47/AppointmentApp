@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="../css/admin-login.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="logo">
+            <img src="https://www.ajims.edu.in/ASPXImages/appointment.jpg" alt="Logo" class="sign">
+        </div>  
+           <div class="stmt">
+            <span class="app-title">Appointment App</span>
+        </div>
+        </div>
+        <div class="navbar-right">
+            <button id="home-btn" class="btn home-btn">Home</button>
+        </div>
+    </nav>
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <form id="admin-login-form">
+            <div class="form-group">
+                <label for="admin-id">Admin ID</label>
+                <input type="text" id="admin-id" required>
+            </div>
+            <div class="form-group">
+                <label for="admin-password">Password</label>
+                <input type="password" id="admin-password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+    </div>
+
+    <script src="../js/admin-login.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://cdn.wallpapersafari.com/30/17/UayVgz.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Styling the navbar */
+.navbar {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+.navbar-right
+{
+    display: flex;
+    flex-direction:row;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.app-title {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-right .btn {
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.navbar-right .btn:hover {
+    background-color:black;
+}
+
+.home-btn
+{
+    background-color: grey;
+    color: white;
+}
+.logout-btn
+{
+    background-color: grey;
+    color: white;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 30px white;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.add-teacher-btn {
+    background-color: grey;
+}
+
+.update-teacher-btn {
+    background-color: grey;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    background-color: black;
+}

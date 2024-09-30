@@ -1,0 +1,190 @@
+/* Basic resets */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background: url('https://cdn.wallpapersafari.com/30/17/UayVgz.png') no-repeat center center fixed;
+    background-size: cover;
+    flex-direction: column;
+    overflow: hidden; /* Disable scrolling */
+}
+
+/* Styling the navbar */
+.navbar {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.app-title {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-right .btn {
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin:9px;
+}
+#logout-btn
+{
+    margin-right:50px;
+}
+
+.navbar-right .btn:hover {
+    background-color: black;
+}
+
+/* Main Flexbox Container */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; /* Increased space between navbar and card */
+    padding: 0;
+    height: calc(100vh - 150px); /* Adjust height so that it doesn't scroll */
+    box-sizing: border-box;
+}
+
+/* Glassmorphism Effect for Form Container */
+.container {
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.15); /* Slightly lighter for improved readability */
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 300px; /* Smaller width for a compact card */
+    width: 100%;
+    height:500px; /* Adjust height based on content */
+    box-shadow: 0 8px 32px white; /* Softer shadow */
+    backdrop-filter: blur(12px); /* Glassmorphism */
+    -webkit-backdrop-filter: blur(12px); /* Safari Support */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: white;
+    overflow: hidden; /* No scroll inside the card */
+}
+
+/* Headings */
+h1 {
+    margin-top:0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Form Styles */
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom:0.4rem;
+    text-align: left;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+/* Input Field Styling */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1); /* Slightly lighter */
+    color: white;
+    font-size: 1rem;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px); /* Light glassmorphism effect */
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+/* Placeholder Styling */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+}
+
+/* Input Focus Styles */
+input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten on focus */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Submit Button Styling */
+.btn.submit-btn {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+.btn.submit-btn:hover {
+    background-color: black;
+    transform: translateY(-3px); /* Slight pop-up effect on hover */
+}
+
+/* Error Message */
+#error-message {
+    color: #ff4c4c;
+    margin-top: 1rem;
+    display: none; /* Hide by default */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+        max-width: 90%; /* Adjust width on smaller screens */
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        padding: 0.5rem;
+    }
+
+    .btn.submit-btn {
+        padding: 0.6rem;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Home</title>
+    <link rel="stylesheet" href="../css/teacher.css">
+    <link rel="stylesheet" href="../css/teacher.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- Right Sidebar Navbar -->
+<nav class="navbar" id="right-navbar">
+  <!-- Profile Section -->
+<div class="profile-section">
+    <!-- Profile Picture -->
+    <div class="profile-photo-wrapper">
+        <img src="https://via.placeholder.com/40" alt="Profile Picture" class="profile-photo" id="teacher-photo">
+        <input type="file" id="profile-picture-upload" class="hidden" accept="image/*" style="display: none;">
+    </div>
+    <div id="teacher-name"></div>
+    <div id="teacher-email"></div>
+</div>
+
+
+    <!-- Buttons Below Profile -->
+    <div class="nav-buttons">
+        <button id="home-btn" class="nav-item">Home</button>
+        <button id="logout-btn" class="nav-item">Logout</button>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <!-- Section 1: Welcome Section -->
+    <section class="section">
+        <h2>Welcome to the Teacher's Portal!</h2>
+        <p>This is your homepage where you can manage your activities.</p>
+    </section>
+
+    <!-- Section 2: Appointment Requests and Student Search -->
+    <section class="section">
+
+        <h3>Search for Students by Email or Name</h3>
+        <div class="inside">
+            <input type="text" id="student-search" placeholder="Enter student email or name">
+            <button id="student-search-btn" class="btn">Search</button>
+        </div>
+        <!-- Display search results -->
+        <div id="student-results"></div>
+    </section>
+
+    <!-- Section 3: Responses to Appointment Notices -->
+    <section class="section">
+        <h3>Approve or Cancel Appointment</h3>
+        <div id="notice-responses"></div>
+    </section>
+</main>
+
+<!-- Scripts -->
+<script type="module" src="../js/firebase-config.js"></script>
+<script type="module" src="../js/teacher.js"></script>
+
+</body>
+</html>

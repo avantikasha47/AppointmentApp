@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background for the body */
+    color: white;
+}
+
+/* Navbar (Right Side) */
+.navbar {
+    background: rgba(12, 5, 5, 0.4); /* Semi-transparent black */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(40, 19, 19, 0.6); /* Subtle border for glass effect */
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    box-shadow: -2px 0 20px rgba(0, 0, 0, 0.7); /* Strong shadow for depth */
+    z-index: 1000;
+}
+
+.nav-left h1 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.nav-right {
+    margin-top: auto;
+    text-align: center;
+}
+
+#student-name,
+#student-email {
+    margin: 10px 0;
+}
+
+.logout-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Welcome Section with Background Image */
+.container {
+    background-image: url('https://cdn.wallpapersafari.com/30/17/UayVgz.png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+    margin-right: 250px; /* Offset for the right-side navbar */
+}
+
+.container h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Bottom Section */
+.bottom {
+    margin-right: 250px; /* Offset for the navbar */
+    padding: 20px;
+}
+
+/* Search Section */
+.bottom h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#subject-search {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: #fff;
+}
+
+#search-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Results Table */
+.results-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.results-table th, .results-table td {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+
+.results-table th {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.results-table td {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Card Styles for Appointment Requests and Notices */
+.card {
+    background: rgba(30, 30, 30, 0.4); /* Semi-transparent dark gray */
+    backdrop-filter: blur(15px); /* Glassmorphism effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Depth with shadow */
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Button in Cards */
+.card .btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card .btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#appointment-requests, #notice-responses {
+    margin-top: 20px;
+}
